@@ -41,6 +41,42 @@ mf = readtable ('minkowski.csv')
 ----------------------------
 Filenames and Keys
 ----------------------------
+| Filename  |   Key |   Description |
+|-----------|-------|---------------|
+|LBM.mat    |   ux  |   x-component of flow velocity|
+|           |   uy  |   y-component of flow velocity|
+|           |   uz  |   z-component of flow velocity|
+|           |   rho |   pressure field|
+|LBM.csv    |   -   |   convergence, # iterations, # cores used, hours of run time, permeability|
+|Vel_Z.png	|   -	|   flow velocity magnitude in the direction of flow
+|Vel_Streamlines.png|	-	|   streamlines calculated from flow velocity
+|P_x_MPa.mat    | 	MFP	    |normalized mean free path
+|   	    |   ux  |  	x-component of flow velocity|
+|           |   uy	|   y-component of flow velocity|
+|           |	uz	|   z-component of flow velocity|
+|           |	rho	|   pressure field|
+|P_x_MPa.csv|	-	|   convergence, # iterations, # cores used, hours of run time, permeability|
+|\*elec.mat |	Ix	|   x-component of electric current|
+|           |	Iy	|   y-component of electric current|
+|           |	Iz	|   z-component of electric current|
+|           |   phi	|   electric potential|
+|Elec_Potential.png|	-	|   electric potential magnitude|
+|Elec_Streamlines.png|	-	|   streamlines of the electric current|
+|features.mat   |	chords_x|	inscribed chords inside the pore space in the x-direction|
+|               |   chords_y|	inscribed chords inside the pore space in the y-direction|
+|               |	e_domain|	Euclidean distance of the pore space in all three coordinate directions|
+|               |   e_full  |  	signed distance function with positive labels inside the pore and negative labels inside the solid|
+|               |   e_z	    |   Euclidean distance in the X-Y plane (orthogonal to the flow direction)|
+|               |	MIS_3D	|   maximum inscribed sphere|
+|               |	MIS_z	|   maximum inscribed sphere in the direction of flow (drainage experiment)|
+|	            |porosity_z |  	slice-wise porosity in the z-direction|
+|               |	tOf_L   |	time of flight from the left boundary (inlet)|
+|               |	tOf_R   |	time of flight from the right boundary (outlet)|
+|features.png   |	-	    |   cross-sections of five features: e_domain, tOf_L, MIS_3D, MIS_z, chords_y|
+|minkowski.csv  |	Vn      |	volume|
+|               |	An	    |   surface area|
+|               |	Jn	    |   mean curvature|
+|               |	Xn      |	Euler characteristic|
 
 
 
