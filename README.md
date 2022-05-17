@@ -27,9 +27,11 @@ mf = read_csv('<FILENAME>.csv', delimiter=’ ’)
 Load data in Matlab:
 ----------------------------
 % Load binary, simulation results, and features (.mat)
+    
 load('<FILENAME>.mat')
 
 % Load Minkowski Functionals (.csv) as table (access variables with mf.<KEY>)
+    
 mf = readtable ('minkowski.csv')
 
 
